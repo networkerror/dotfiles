@@ -1,6 +1,12 @@
 # What's What
-'*.source' files should be sourced by .bash_profile
-Other files in this directory (like `vimrc`) are meant to be symlinked to a common sense location
+This is a standard load-out of my configs and setups.
 
-## Install
-Stuff in the install directory will do some initial system configuration
+## *.source Files
+`*.source` files live in the root directory and should be sourced by .bash_profile
+(See the `source_this` file for a simple helper.)
+
+## !*.source Files
+Other files in the root directory (like `vimrc`) are meant to be symlinked to a common sense location
+
+## install/
+Stuff in the install directory will do some initial system configuration.
