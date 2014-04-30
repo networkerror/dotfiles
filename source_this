@@ -1,1 +1,0 @@
-for f in ~/dotfiles/*.source; do source $f; done
