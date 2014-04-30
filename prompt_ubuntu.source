@@ -1,0 +1,2 @@
+source /etc/bash_completion.d/git-prompt
+export PS1='[\[\e[36;1m\]\u \[\e[32;1m\]\w\e[0m$(__git_ps1 " \e[93m(%s)\e[0m")]\$ '
