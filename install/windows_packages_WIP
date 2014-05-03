@@ -1,18 +1,12 @@
 These are just some notes on Windows apps I typically install.
 Later, I'll turn this into a script - maybe using chocolatey
 
-cygwin
 chocolatey
-webstorm
-chrome
-sublime text
-vagrant
-virtual box
-ditto
+
+(Install command for all the stuff available via chocolatey)
+cinst cygwin WebStorm GoogleChrome sublime vagrant virtualbox ditto winsplit dexpot dropbox vlc
+
 screen hero
 hangouts
-winsplit revolution
-Dexpot
 Autohotkeys
 nodejs + npm + nvm
-dropbox
