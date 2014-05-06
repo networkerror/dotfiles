@@ -28,12 +28,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "install/ubuntu_packages.sh"
 
   # RUN AS NON-ROOT
+  #   dotfiles/sources
+  config.vm.provision "shell", inline: "ln -s /code/dotfiles ~/dotfiles; touch ~/.bash_profile; cat \"\n\" ~/.bash_profile; cat /code/dotfiles/sources/source_this >> ~/.bash_profile", privileged: false
   #   nvm
   config.vm.provision "shell", path: "install/nvm.sh", privileged: false
   #   node modules
   config.vm.provision "shell", path: "install/node_modules.sh", privileged: false
-  #   dotfiles/sources
-  config.vm.provision "shell", inline: "ln -s /code/dotfiles ~/dotfiles; cp /code/dotfiles/sources/source_this ~/.bash_profile", privileged: false
+  #   /code symlink
+  config.vm.provision "shell", inline: "ln -s /code ~/", privileged: false
   #   .vimrc
   config.vm.provision "shell", inline: "ln -s /code/dotfiles/configs/vimrc ~/.vimrc", privileged: false
   #   ssh keys
