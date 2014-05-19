@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # RUN AS NON-ROOT
   #   dotfiles/sources
-  config.vm.provision "shell", inline: "ln -s /code/dotfiles ~/dotfiles; touch ~/.bash_profile; cat \"\n\" ~/.bash_profile; cat /code/dotfiles/sources/source_this >> ~/.bash_profile", privileged: false
+  config.vm.provision "shell", inline: "ln -s /code/dotfiles ~/dotfiles; touch ~/.bash_profile; cat \"\n\" ~/.bash_profile; cat /code/dotfiles/sources/source_this.ubuntu.sh >> ~/.bash_profile", privileged: false
   #   nvm
   config.vm.provision "shell", path: "install/nvm.sh", privileged: false
   #   node modules

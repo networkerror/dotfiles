@@ -1,0 +1,7 @@
+# GULP tab completion
+eval "$(gulp --completion=bash)"
+
+# GIT tab completion
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  /usr/local/etc/bash_completion.d/git-completion.bash
+fi
