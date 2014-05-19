@@ -1,4 +1,4 @@
-Toolbar Apps
+#Toolbar Apps
 adium
 alfred
 bettertouch
@@ -7,7 +7,7 @@ clipmenu
 caffeine
 menu meters
 
-GUI Apps
+#GUI Apps
 Audacity
 FireFox
 Chrome
@@ -22,5 +22,8 @@ steam
 sublime text
 vagrant + virtual box
 VLC
+
+#DEV Apps
 Xcode
 Java
+RVM
