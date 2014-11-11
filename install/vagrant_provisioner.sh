@@ -23,9 +23,9 @@ fi
 source ~/dotfiles/install/ubuntu_user_setup.sh
 
 # Install standard SSH keys into vagrant
-# NOTE: This file assumes your ssh keys are in ../../ssh_keys
+# NOTE: This file assumes your ssh keys are in ../../.ssh
 # ALSO: RUN THIS AS YOUR USER, NOT ROOT
 echo "Installing SSH Keys from /code/ssh_keys"
-cp /code/ssh_keys/id_rsa ~/.ssh
+cp /code/.ssh/id_rsa ~/.ssh
 chmod 700 ~/.ssh/id_rsa
-cp /code/ssh_keys/id_rsa.pub ~/.ssh
+cp /code/.ssh/id_rsa.pub ~/.ssh
