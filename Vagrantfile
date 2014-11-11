@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # RUN AS ROOT
   #   ubuntu packages
-#  config.vm.provision "shell", path: "install/ubuntu_packages.sh"
+  config.vm.provision "shell", path: "install/ubuntu_packages.sh"
 
   # RUN AS NON-ROOT
   #   setup symlinks, keys, user stuff...
