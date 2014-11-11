@@ -3,4 +3,6 @@
 echo "Installing Ubuntu Packages"
 
 apt-get update
-apt-get -y install vim nmap git wget curl ack-grep dos2unix
+apt-get -y install vim nmap git wget curl ack-grep dos2unix libfontconfig
+
+# libfontconfig is required by phantomjs - or it dies on takeoff
