@@ -1,7 +1,4 @@
 alias vi=vim
 alias ls='ls -alh --color'
 alias ll='ls -Flh'
-
-function title {
-  echo -ne "\033]0;"$*"\007"
-}
+alias c='cd ~/code'

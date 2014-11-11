@@ -1,3 +1,7 @@
+function title {
+  echo -ne "\033]0;"$*"\007"
+}
+
 alias vi="mvim -v"
 alias vim="mvim -v"
 
