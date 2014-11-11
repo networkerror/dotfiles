@@ -1,13 +1,20 @@
 # NON-ROOT setup that takes place after all apt packages are installed
 
 # dotfiles/sources
-if [ ! -f ~/dotfiles ]; then
+if [ ! -e ~/dotfiles ]; then
   echo "Creating dotfiles symlink"
   ln -s /code/dotfiles ~/dotfiles
 fi
 
+# Install dotfiles/bin to ~/bin and chmod+x everything (hack hack hack)
+if [ ! -e ~/bin ]; then
+  echo "Setting up ~/bin"
+  cp -r ~/dotfiles/bin ~/bin
+  chmod +x ~/bin/*
+fi
+
 # /code symlink
-if [ ! -f ~/code ]; then
+if [ ! -e ~/code ]; then
   echo "Creating code symlink"
   ln -s /code ~/code
 fi

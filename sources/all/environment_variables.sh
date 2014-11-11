@@ -2,6 +2,8 @@ if [ -f /usr/libexec/java_home ]; then
   export JAVA_HOME=`/usr/libexec/java_home -v 1.7`;
 fi
 
+export PATH=$PATH:~/dotfiles/bin:~/bin
+
 export LSCOLORS=dxfxcxdxbxegedabagacad
 
 # history handling
