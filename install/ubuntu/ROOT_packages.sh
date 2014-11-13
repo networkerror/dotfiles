@@ -1,3 +1,4 @@
+#!/bin/bash
 # Run as root
 # Note: This script is idempotent - you can run it over and over again safely
 echo "Installing Ubuntu Packages"

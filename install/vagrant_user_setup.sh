@@ -1,3 +1,4 @@
+#!/bin/bash
 # NON-ROOT setup that takes place after all apt packages are installed
 
 # dotfiles/sources

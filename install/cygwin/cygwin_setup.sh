@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install "source" commands to bash_profile
 touch ~/.bash_profile
 if grep -q DOTFILE-PROFILE ~/.bash_profile; then

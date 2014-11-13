@@ -5,7 +5,7 @@
 #    [code]/dotfiles
 #    [code]/other_project
 # 2.  You have your ssh keys in your code folder like so:
-#    [code]/ssh_keys/id_rsa (and id_rsa.pub)
+#    [code]/.ssh/id_rsa (and id_rsa.pub)
 #
 ###############################################################
 
@@ -25,10 +25,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # RUN AS ROOT
   #   ubuntu packages
-  config.vm.provision "shell", path: "install/ubuntu_packages.sh"
+  config.vm.provision "shell", path: "install/vagrant_root_setup.sh"
 
   # RUN AS NON-ROOT
   #   setup symlinks, keys, user stuff...
-  config.vm.provision "shell", path: "install/vagrant_provisioner.sh", privileged: false
+  config.vm.provision "shell", path: "install/vagrant_user_setup.sh", privileged: false
 end
 
