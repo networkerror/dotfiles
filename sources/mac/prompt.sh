@@ -1,3 +1,4 @@
+# Nicely formatted terminal prompt
 source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
 
 __has_parent_dir () {
