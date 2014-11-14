@@ -21,7 +21,7 @@ if [ ! -e ~/code ]; then
 fi
 
 # Install all the user-level stuff
-source ~/dotfiles/install/ubuntu_user_setup.sh
+cd /vagrant/install; source ./ubuntu_user_setup.sh
 
 # Install standard SSH keys into vagrant
 # NOTE: This file assumes your ssh keys are in ../../.ssh

@@ -5,4 +5,4 @@
 
 for f in all/*; do source $f; done
 
-source ubuntu/install_bash_profile.sh
+source ubuntu/bash_profile.sh
