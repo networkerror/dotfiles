@@ -1,5 +1,5 @@
 if [ -f /usr/libexec/java_home ]; then
-  export JAVA_HOME=`/usr/libexec/java_home -v 1.7`;
+  export JAVA_HOME=`/usr/libexec/java_home -v 1.8`;
 fi
 
 export PATH=$PATH:~/dotfiles/bin:~/bin
