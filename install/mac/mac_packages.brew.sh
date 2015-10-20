@@ -7,4 +7,6 @@ brew install autoconf automake cmake
 
 # GUI - app installer
 brew install caskroom/cask/brew-cask
-brew cask install sequel-pro
+
+# Docker toolbox installs virtual box automagically
+brew cask install sequel-pro vagrant dockertoolbox
