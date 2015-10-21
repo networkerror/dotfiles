@@ -9,4 +9,4 @@ brew install autoconf automake cmake
 brew install caskroom/cask/brew-cask
 
 # Docker toolbox installs virtual box automagically
-brew cask install sequel-pro vagrant dockertoolbox sublime-text
+brew cask install sequel-pro vagrant dockertoolbox sublime-text flux bettertouchtool
