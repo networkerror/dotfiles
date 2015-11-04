@@ -3,3 +3,5 @@ function title {
 }
 
 # To set a title: alias gatewaystub="title GATEWAY && ..."
+
+alias ls='ls -alh'
