@@ -1,4 +1,4 @@
-git config --global user.email "networkerror@gmail.com"
+git config --global user.email "thood@beachbody.com"
 git config --global user.name "Tom Hood"
 git config --global core.editor vim
 git config --global push.default current
@@ -6,6 +6,9 @@ git config --global pull.default current
 
 git config --global branch.master.remote origin
 git config --global branch.master.merge refs/heads/master
+
+ln -s ~/dotfiles/configs/.gitignore ~/.gitignore
+git config --global core.excludesfile '~/.gitignore'
 
 git config --global color.ui auto
 git config --global color.interactive auto
