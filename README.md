@@ -21,6 +21,8 @@ cd ~/dotfiles/install/;
 ./mac_user_setup.sh
 ```
 
+* Launch BetterTouchTool and import settings from `!/dotfiles/configs/mac/better_touch_settings`
+
 ## Ubuntu
 * Run the following
 
@@ -75,4 +77,3 @@ Stuff in the install directory will do some initial system configuration.  These
 
 ## bin/
 This should be added to your path.  (It's added automatically in Linux/Mac.)  Throw any utilities in here for easy use.
-
